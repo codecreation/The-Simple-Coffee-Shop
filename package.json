@@ -1,0 +1,27 @@
+{
+  "name": "the-simple",
+  "version": "1.0.0",
+  "description": "Website for the Coffee Shop",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codecreation/The-Simple-Coffee-Shop.git"
+  },
+  "keywords": [
+    "coffee",
+    "the",
+    "simple"
+  ],
+  "author": "Amir T.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codecreation/The-Simple-Coffee-Shop/issues"
+  },
+  "homepage": "https://github.com/codecreation/The-Simple-Coffee-Shop#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
