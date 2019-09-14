@@ -7,14 +7,41 @@
 }
 
 
+
 body{
   line-height: 2;
   font-size: 1.5rem;
   font-family: 'Yanone Kaffeesatz', sans-serif;
+
+  .image-container{
+    background: url(../img/background.jpeg);
+    height: 100vh;
+    width: 100%;
+
+      header{
+        height: 40px;
+        top: 0;
+        transition: top 0.2s ease-in-out;
+        width: 100%;
+
+        h1{
+          transform: translateY(100%);
+          color: #fff;
+          font-size: 7.5rem;
+        }
+
+        .header-text{
+          transition: 2.5s;
+        }
+      }
+  }
+
+
 }
 
 a{
   text-decoration: none;
+
 }
 
 ul{
@@ -23,16 +50,38 @@ ul{
 
 // Header
 
-header{
-  h1{
-    text-align: center;
-  }
-}
+
 
 
 // Navigation
 
 #main-nav{
+
+  .container{
+
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    padding: 1rem;
+    align-items: center;
+    img{
+      border-radius: 50%;
+      height: 5rem;
+      width:  5rem;
+    }
+
+    .social [class*="fab fa-"] {
+    background-color: #333;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin: auto 4px;
+    width: 40px;
+    font-size: 15px;
+    text-align: center;
+}
+  }
 
     background: #f4f4f4;
     margin-bottom: 0.2rem;
@@ -42,14 +91,17 @@ header{
     justify-content: center;
     align-items: center;
 
+    li a{
+      padding: 0.5rem;
+      color: #000;
+      &:hover{
+        font-weight: bold;
+      }
+    }
+
   }
 
-  a{
-    padding: 0.5rem;
-    &:hover{
-      background: #6f4e37;
-    }
-  }
+
 }
 
 //carousel
@@ -201,7 +253,6 @@ header{
 
 #menu{
   .container{
-    border: dotted #000 2px;
     margin: 0.5rem;
     background: #f4f4f4;
     padding: 0.7rem;
@@ -232,20 +283,6 @@ footer{
     text-align: center;
     background: #000;
     color: #fff;
-
-    .social [class*="fab fa-"] {
-    background-color: #333;
-    border-radius: 30px;
-    color: #fff;
-    display: inline-block;
-    height: 30px;
-    line-height: 30px;
-    margin: auto 3px;
-    width: 30px;
-    font-size: 15px;
-    text-align: center;
-}
-
 
   }
 }
