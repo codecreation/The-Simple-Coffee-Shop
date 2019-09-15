@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title>The Simple Coffee House | Welcome</title>
   <style>
@@ -33,22 +34,6 @@
     </header>
   </div>
 
-  <!-- <header>
-      <h1>The Simple Coffee House</h1>
-  </header> -->
-
-
-
-
-
-<div class="buttons">
-  <button id="prev">
-    <i class="fas fa-arrow-left"></i>
-  </button>
-  <button id="next">
-    <i class="fas fa-arrow-right"></i>
-  </button>
-</div> -->
 
 <!-- Menu -->
 <section id="menu">
@@ -123,9 +108,63 @@
   </div>
 </section>
 
+<!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="imgBox">
+          <img src="img/pic1.jpg" alt="">
+        </div>
+        <div class="details">
+          <h3>Detail</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="imgBox">
+          <img src="img/pic2.jpg" alt="">
+        </div>
+        <div class="details">
+          <h3>Detail</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="imgBox">
+          <img src="img/pic3.jpg" alt="">
+        </div>
+        <div class="details">
+          <h3>Detail</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="imgBox">
+          <img src="img/pic3.jpg" alt="">
+        </div>
+        <div class="details">
+          <h3>Detail</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="imgBox">
+          <img src="img/pic3.jpg" alt="">
+        </div>
+        <div class="details">
+          <h3>Detail</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="imgBox">
+          <img src="img/pic3.jpg" alt="">
+        </div>
+        <div class="details">
+          <h3>Detail</h3>
+        </div>
+      </div>
+    </div>
+     <div class="swiper-pagination"></div>
+  </div>
 
 <!-- carousel -->
-<section id="carousel">
+<!-- <section id="carousel">
   <div class="slide active">
     <div class="content">
       <h1>Slide One</h1>
@@ -162,7 +201,8 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam culpa illum omnis, cum, porro excepturi!</p>
     </div>
   </div>
-</section>
+
+</section> -->
 
 
 
@@ -245,15 +285,25 @@
     </script> -->
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0VCv12M-VN3diVzPlpjyxb_CwwshTj78&callback=initMap"
     async defer></script> -->
-<script>
-
-const menuItem = document.get
-
-function current(target) {
-  target.style.fontWeight = "900";
-}
-
-</script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+    </script>
 
 </body>
 
